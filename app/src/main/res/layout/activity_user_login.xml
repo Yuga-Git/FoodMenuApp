@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.UserLogin"
+    android:background="@color/purple_200"
+    android:id="@+id/loginuser">
+
+    <ImageView
+        android:id="@+id/imgkhadyayatra"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:src="@drawable/foodnav"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/edtmobno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgkhadyayatra"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/entermobno"
+        android:textSize="16sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:inputType="phone"
+        android:drawableLeft="@drawable/ic_mobno"
+        android:background="@drawable/backtxt"/>
+
+    <EditText
+        android:id="@+id/edtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtmobno"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="@string/enterpass"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_password"
+        android:background="@drawable/backtxt"/>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/edtpassword"
+        android:text="@string/login"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="@drawable/btnbg"/>
+
+    <TextView
+        android:id="@+id/txtforgetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/forget_password"
+        android:textSize="16dp"
+        app:helperText="Forget Password" />
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:contextClickable="true"
+        android:text="@string/register"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
